@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Estudos Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="topo">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.jpeg" alt="logo pagina da steh" width="90px" class="rounded">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#quemsomos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parceiros">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#localizacao">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <section id="quemsomos">
+        <div class="container-fluid quemsomos text-center padding"> 
+            <h3 class="pb-2">QUEM SOMOS</h3>
+            <img src="img/pexels-photo.jpg" class="rounded-circle" height="300px" width="300px">
+            <p class="container pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti eveniet voluptate odio ab ipsa sed sequi, laudantium, a provident, necessitatibus illum possimus. Quisquam repellat dolorem excepturi, quia illo corporis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatibus error vero repellat id voluptas voluptatem autem, temporibus nesciunt? Dolores ducimus adipisci tempore, magnam veritatis soluta nisi. Mollitia, consectetur voluptatem.
+            </p>
+            <a class="nav-link text-secondary col-4" href="#topo">^ Topo</a>
+        </div>
+    </section>
+
+    <section id="parceiros">
+        <div class="container-fluid parceiros text-center padding">
+            <h3 class="pb-2">PARCEIROS</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/pexels-parceiro1-3184418.jpeg" class="rounded-circle pb-2" height="150px" width="150px">
+                        <p> Lorem ipsum dolor sit amet elit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/pexels-parceiro2-461049.jpeg" class="rounded-circle pb-2" height="150px" width="150px">
+                        <p> Lorem ipsum dolor sit amet elit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/pexels-parceiro3-1181438.jpeg" class="rounded-circle pb-2" height="150px" width="150px">
+                        <p> Lorem ipsum dolor sit amet elit.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="nav-link text-secondary col-4" href="#topo">^ Topo</a>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="container-fluid localizacao text-center padding">
+            <h3 class="pb-2">LOCALIZAÇÃO</h3>
+            <img src="img/pexels-photo-302769.jpeg" class="rounded-circle" height="300px" width="300px">
+            <p class="container pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim nobis totam, autem temporibus ipsa quod eaque sequi dolores nihil, obcaecati hic odit consequatur atque doloribus odio quam, necessitatibus ipsum?</p>
+            <a class="nav-link text-secondary col-4" href="#topo">^ Topo</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container-fluid contato text-center padding">
+            <h3 class="pb-2">CONTATO</h3>
+            <div class="col-6 offset-3">
+                <form class="card card-sm mb-4 container" style="background-color:rgba(231, 231, 231, 0.507)" method='POST'>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="inlineFormInputName">Nome</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Assunto</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Dúvidas</option>
+                                <option>Elogios/Reclamações</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <a class="nav-link text-secondary col-4" href="#topo">^ Topo</a>
+        </div>
+    </section>
+    
+    <footer class="container-fluid bg-footer">
+        <p class="text-center text-secondary">Desenvolvido por Stephanie Dias - 2020</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
